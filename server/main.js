@@ -16,7 +16,7 @@ function hideLoader() {
 //   ? 'http://localhost:5000/text'
 //   : 'https://ai-model-6.onrender.com/text';
 
-const API_URL = 'http://localhost:5002';
+const API_URL = 'https://ai-chat-box-2.onrender.com';
 
 // Add this in a script tag or in your JS file
 document.getElementById('btn').addEventListener('click', async () => {
@@ -28,7 +28,7 @@ document.getElementById('btn').addEventListener('click', async () => {
         
         console.log(userText);
         showLoader();
-        const response = await fetch('http://localhost:5002/text', {
+        const response = await fetch('https://ai-chat-box-2.onrender.com/text', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text: userText }) 

@@ -457,5 +457,5 @@ app.post('/pdf', upload.single('file'), (req, res) => {
 });
 
 app.listen(5002, () => {
-   console.log('Server running on http://localhost:5002');
+   console.log('Server running on https://ai-chat-box-2.onrender.com');
 });

@@ -318,7 +318,7 @@ const ChatContainer: React.FC<ChatContainerProps> = ({ mode }) => {
   }, [mode]);
 
   const getApiEndpoint = (chatMode: ChatMode) => {
-    const baseUrl = 'http://localhost:5002';
+    const baseUrl = 'https://ai-chat-box-2.onrender.com';
     switch (chatMode) {
       case 'code': return `${baseUrl}/code`;
       case 'pdf': return `${baseUrl}/pdf`;
